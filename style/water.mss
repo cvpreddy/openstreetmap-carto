@@ -1,6 +1,6 @@
-@water-text: #4d80b3;
-@glacier: #ddecec;
-@glacier-line: #9cf;
+@water-text: #303030;
+@glacier: #303030;
+@glacier-line: #303030;
 
 @waterway-text-repeat-distance: 200;
 
@@ -43,7 +43,7 @@
       [int_intermittent != 'yes'][zoom >= 14],
       [zoom >= 15] {
         line-width: 2.5;
-        line-color: white;
+        line-color: #606060;
         [waterway = 'stream'][zoom >= 15] {
           line-width: 3.5;
         }
@@ -103,7 +103,7 @@
 
     [int_intermittent = 'yes'] {
       [bridge = 'yes'][zoom >= 14] {
-        bridgefill/line-color: white;
+        bridgefill/line-color: #606060;
         bridgefill/line-join: round;
         bridgefill/line-width: 4;
         [zoom >= 15] { bridgefill/line-width: 5; }
@@ -134,7 +134,7 @@
       background/line-join: miter;
       water/line-cap: butt;
       water/line-join: miter;
-      tunnelfill/line-color: #f3f7f7;
+      tunnelfill/line-color:#606060;
       tunnelfill/line-width: 1;
       [zoom >= 14] { tunnelfill/line-width: 2; }
       [zoom >= 15] { tunnelfill/line-width: 3; }
@@ -161,7 +161,7 @@
         bridgecasing/line-join: round;
         bridgecasing/line-width: 4;
         [waterway = 'stream'][zoom >= 15] { bridgecasing/line-width: 4; }
-        bridgeglow/line-color: white;
+        bridgeglow/line-color: #606060;
         bridgeglow/line-join: round;
         bridgeglow/line-width: 3;
         [waterway = 'stream'][zoom >= 15] { bridgeglow/line-width: 3; }
@@ -191,7 +191,7 @@
         water/line-dasharray: 4,2;
         tunnelfill/line-width: 1;
         [waterway = 'stream'] { tunnelfill/line-width: 2; }
-        tunnelfill/line-color: #f3f7f7;
+        tunnelfill/line-color: #606060;
       }
     }
   }

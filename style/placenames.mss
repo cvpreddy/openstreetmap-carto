@@ -1,8 +1,8 @@
-@placenames: #222;
-@placenames-light: #777777;
-@country-labels: darken(@admin-boundaries-narrow, 10%);
-@state-labels: desaturate(@admin-boundaries-narrow, 5%);
-@county-labels: darken(@admin-boundaries-wide, 5%);
+@placenames: #A0A0A0;
+@placenames-light: #3E3E3E;
+@country-labels: darken(#A0A0A0, 10%);
+@state-labels: desaturate(#A0A0A0, 5%);
+@county-labels: darken(#A0A0A0, 5%);
 
 #country-names {
   [zoom >= 3][zoom < 5][way_pixels > 1000],
@@ -96,7 +96,7 @@
     shield-text-dy: 6;
     shield-name: '[name]';
     shield-face-name: @book-fonts;
-    shield-fill: @placenames;
+    shield-fill: @placenames-light;
     shield-size: 11;
     shield-wrap-width: 30; // 2.7 em
     shield-line-spacing: -1.6; // -0.15 em
@@ -161,7 +161,7 @@
       shield-text-dy: 4;
       shield-name: '[name]';
       shield-face-name: @book-fonts;
-      shield-fill: @placenames;
+      shield-fill: @placenames-light;
       shield-size: 11;
       shield-wrap-width: 30; // 2.7 em
       shield-line-spacing: -1.65; // -0.15 em
@@ -229,7 +229,7 @@
       shield-text-dy: 4;
       shield-name: "[name]";
       shield-size: 10;
-      shield-fill: @placenames;
+      shield-fill: @placenames-light;
       shield-face-name: @book-fonts;
       shield-halo-fill: @standard-halo-fill;
       shield-halo-radius: @standard-halo-radius * 1.5;
@@ -340,8 +340,8 @@
       text-wrap-width: 70; // 5.0 em
       text-line-spacing: -0.70; // -0.05 em
       text-margin: 9.8; // 0.7 em
-      text-fill: @placenames-light;
-      text-halo-fill: white;
+      text-fill: #A0A0A0;
+      text-halo-fill: @placenames-light;
     }
     [zoom >= 16] {
       text-size: 15;
@@ -371,8 +371,8 @@
         text-margin: 7.7; // 0.7 em
       }
       [zoom >= 14] {
-        text-fill: @placenames-light;
-        text-halo-fill: white;
+        text-fill: #A0A0A0;
+      	text-halo-fill: @placenames-light;
         text-size: 13;
         text-wrap-width: 65; // 5.0 em
         text-line-spacing: -0.65; // -0.05 em
@@ -398,19 +398,19 @@
   [place = 'quarter'] {
     [zoom >= 14][zoom < 17] {
       text-name: "[name]";
-      text-fill: @placenames;
+      text-fill: #A0A0A0;
       text-face-name: @book-fonts;
       text-halo-fill: @standard-halo-fill;
       text-halo-radius: @standard-halo-radius * 1.5;
       [zoom >= 14] {
-        text-halo-fill: white;
+        text-halo-fill: @placenames-light;
         text-size: 11;
         text-wrap-width: 55; // 5.0 em
         text-line-spacing: -0.55; // -0.05 em
         text-margin: 7.7; // 0.7 em
       }
       [zoom >= 15] {
-        text-fill: @placenames-light;
+        text-fill: #A0A0A0;
         text-size: 12;
         text-wrap-width: 60; // 5.0 em
         text-line-spacing: -0.60; // -0.05 em
@@ -427,9 +427,9 @@
   [place = 'hamlet'] {
     [zoom >= 14][zoom < 18] {
       text-name: "[name]";
-      text-fill: @placenames;
+      text-fill: #A0A0A0;
       text-face-name: @book-fonts;
-      text-halo-fill: white;
+      text-halo-fill: @placenames-light;
       text-halo-radius: @standard-halo-radius * 1.5;
       [zoom >= 14] {
         text-size: 10;
@@ -439,7 +439,7 @@
       }
       [zoom >= 15] {
         text-size: 11;
-        text-fill: @placenames-light;
+        text-fill: #A0A0A0;
         text-halo-fill: @standard-halo-fill;
         text-wrap-width: 45; // 4.5 em
         text-line-spacing: -0.8; // -0.08 em
@@ -450,8 +450,8 @@
         text-wrap-width: 60; // 5.0 em
         text-line-spacing: -0.60; // -0.05 em
         text-margin: 8.4; // 0.7 em
-        text-fill: @placenames-light;
-        text-halo-fill: white;
+        text-fill: #A0A0A0;
+      	text-halo-fill: @placenames-light;
       }
     }
   }
@@ -475,8 +475,8 @@
       text-wrap-width: 60; // 5.0 em
       text-line-spacing: -0.60; // -0.05 em
       text-margin: 8.4; // 0.7 em
-      text-fill: @placenames-light;
-      text-halo-fill: white;
+      text-fill: #A0A0A0;
+      text-halo-fill: @placenames-light;
     }
   }
 }
@@ -490,7 +490,7 @@
       text-wrap-width: 30; // 3.0 em
       text-line-spacing: -1.5; // -0.15 em
       text-margin: 7.0; // 0.7 em
-      text-fill: @county-labels;
+      text-fill: #A0A0A0;
       text-face-name: @oblique-fonts;
       text-halo-fill: @standard-halo-fill;
       text-halo-radius: @standard-halo-radius * 1.5;

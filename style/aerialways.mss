@@ -58,11 +58,11 @@
       line/line-width: 0.7;
       line/line-join: round;
       line/line-cap: round;
-      line/line-color: #999999;
+      line/line-color: #A9A9A9;
 
       dash/line-width: 2;
       dash/line-join: round;
-      dash/line-color: #999999;
+      dash/line-color: #A9A9A9;
       dash/line-dasharray: 4,6;
 
       [zoom >= 16] {
@@ -77,11 +77,11 @@
     [zoom >= 14] {
       line/line-width: .7;
       line/line-join: round;
-      line/line-color: #909090;
+      line/line-color: #A9A9A9;
       line/line-dasharray: 0,.7,14,.7;
       dash/line-width: 2;
       dash/line-join: round;
-      dash/line-color: #909090;
+      dash/line-color: #A9A9A9;
       dash/line-dasharray: 0,.7,.7,12.6,.7,.7;
       [zoom >= 15] {
         line/line-width: 1;
@@ -143,7 +143,7 @@
   [feature = 'man_made_pipeline'] {
     [zoom >= 17] {
       text-name: "[name]";
-      text-fill: #666666;
+      text-fill: #A9A9A9;
       text-size: 10;
       text-dy: 4;
       text-spacing: 900;

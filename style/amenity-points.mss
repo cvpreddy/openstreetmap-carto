@@ -1,28 +1,28 @@
-@marina-text: #576ddf; // also swimming_pool
-@wetland-text: darken(#4aa5fa, 25%); /* Also for mud */
-@shop-icon: #ac39ac;
-@shop-text: #939;
-@transportation-icon: #0092da;
-@transportation-text: #0066ff;
+@marina-text: #A9A9A9; // also swimming_pool
+@wetland-text: darken(#A9A9A9, 25%); /* Also for mud */
+@shop-icon: #A9A9A9;
+@shop-text: #A9A9A9;
+@transportation-icon: #A9A9A9;
+@transportation-text: #A9A9A9;
 @accommodation-icon: @transportation-icon;
 @accommodation-text: @transportation-text;
-@airtransport: #8461C4; //also ferry_terminal
-@health-color: #BF0000;
-@amenity-brown: #734a08;
-@gastronomy-icon: #C77400;
+@airtransport: #A9A9A9; //also ferry_terminal
+@health-color: #A9A9A9;
+@amenity-brown: #A9A9A9;
+@gastronomy-icon: #A9A9A9;
 @gastronomy-text: darken(@gastronomy-icon, 5%);
 @memorials: @amenity-brown;
 @culture: @amenity-brown;
 @public-service: @amenity-brown;
-@office: #4863A0;
-@man-made-icon: #666666;
+@office: #A9A9A9;
+@man-made-icon: #A9A9A9;
 @advertising-grey: @man-made-icon;
-@barrier-icon: #3f3f3f;
-@landform-color: #d08f55;
+@barrier-icon: #A9A9A9;
+@landform-color: #A9A9A9;
 @leisure-green: darken(@park, 60%);
-@protected-area: #008000;
-@aboriginal: #82643a;
-@religious-icon: #000000;
+@protected-area: #A9A9A9;
+@aboriginal: #A9A9A9;
+@religious-icon: #A9A9A9;
 
 @landcover-font-size: 10;
 @landcover-wrap-width-size: 30; // 3 em
@@ -193,7 +193,7 @@
 
   [feature = 'highway_traffic_signals'][zoom >= 17] {
     marker-file: url('symbols/highway/traffic_light.13.svg');
-    marker-fill: #545454;
+    marker-fill: #A9A9A9;
     marker-clip: false;
   }
 
@@ -1373,7 +1373,7 @@
 
   [feature = 'natural_volcano'][zoom >= 11] {
     marker-file: url('symbols/natural/peak.svg');
-    marker-fill: #d40000;
+    marker-fill: #A9A9A9;
     marker-clip: false;
   }
 
@@ -1544,7 +1544,7 @@
     [zoom >= 17] {
       marker-width: 3;
       marker-line-width: 0;
-      marker-fill: #7d7c7c;
+      marker-fill: #A9A9A9;
 
       [zoom >= 18] {
         marker-width: 4;
@@ -1587,7 +1587,7 @@
   [feature = 'place_islet'][zoom >= 11][way_pixels > 3000],
   [feature = 'place_islet'][zoom >= 17] {
     text-name: "[name]";
-    text-fill: #000;
+    text-fill: #A9A9A9;
     text-size: @landcover-font-size;
     text-wrap-width: @landcover-wrap-width-size;
     text-line-spacing: @landcover-line-spacing-size;
@@ -1609,7 +1609,7 @@
   [feature = 'place_locality'][zoom >= 16] {
     text-name: "[name]";
     text-size: 10;
-    text-fill: @placenames;
+    text-fill: #A9A9A9;
     text-face-name: @book-fonts;
     text-halo-fill: @standard-halo-fill;
     text-halo-radius: @standard-halo-radius * 1.5;
@@ -1621,7 +1621,7 @@
       text-wrap-width: 60; // 5.0 em
       text-line-spacing: -0.60; // -0.05 em
       text-margin: 8.4; // 0.7 em
-      text-fill: @placenames-light;
+      text-fill: #A9A9A9;
       text-halo-fill: white;
     }
   }
@@ -1646,7 +1646,7 @@
   [feature = 'amenity_bar'][zoom >= 18],
   [feature = 'amenity_ice_cream'][zoom >= 18] {
     text-name: "[name]";
-    text-fill: @gastronomy-text;
+    text-fill: #A9A9A9;
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1808,7 +1808,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: #000033;
+    text-fill: #A9A9A9;
     text-dy: 12;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
@@ -1836,8 +1836,8 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: darken(@landform-color, 30%);
-    [feature = 'natural_volcano'] { text-fill: #d40000; }
+    text-fill: #A9A9A9;
+    [feature = 'natural_volcano'] { text-fill: #A9A9A9; }
     text-dy: 7;
     [feature = 'tourism_viewpoint'] { text-dy: 11; }
     text-face-name: @standard-font;
@@ -1847,7 +1847,7 @@
 
   [feature = 'natural_cape'][zoom >= 14] {
     text-name: "[name]";
-    text-fill: #000;
+    text-fill: #A9A9A9;
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1862,7 +1862,7 @@
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
-      text-fill: darken(black, 30%);
+      text-fill: darken(#A9A9A9, 30%);
       [information = 'office'] { text-fill: @amenity-brown; }
       text-face-name: @standard-font;
       text-halo-radius: @standard-halo-radius;
@@ -1879,7 +1879,7 @@
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
-      text-fill: @water-text;
+      text-fill:#A9A9A9;
       text-dy: 10;
       text-face-name: @standard-font;
       text-halo-radius: @standard-halo-radius;
@@ -2075,7 +2075,7 @@
       }
       [feature = 'natural_wood'],
       [feature = 'landuse_forest'] {
-        text-fill: @forest-text;
+        text-fill:#A9A9A9;
       }
       [feature = 'boundary_national_park'],
       [feature = 'leisure_nature_reserve'],
@@ -2277,35 +2277,35 @@
       }
       [feature = 'tourism_theme_park'],
       [feature = 'tourism_zoo'] {
-        text-fill: @tourism;
+        text-fill: #A9A9A9;
         text-face-name: @bold-fonts; /*rendered bold to improve visibility since theme parks tend to have crowded backgrounds*/
       }
       [feature = 'amenity_kindergarten'],
       [feature = 'amenity_school'],
       [feature = 'amenity_college'],
       [feature = 'amenity_university'] {
-        text-fill: darken(@societal_amenities, 80%);
+        text-fill: #A9A9A9;
       }
       [feature = 'landuse_religious'] {
-        text-fill: darken(@place_of_worship, 50%);
+        text-fill: #A9A9A9;
       }
       [feature = 'natural_heath'] {
-        text-fill: darken(@heath, 40%);
+        text-fill: #A9A9A9;
       }
       [feature = 'natural_scrub'] {
-        text-fill: darken(@scrub, 60%);
+        text-fill: #A9A9A9;
       }
       [feature = 'natural_beach'],
       [feature = 'natural_shoal'] {
-        text-fill: darken(@beach, 60%);
+        text-fill: #A9A9A9;
       }
       [feature = 'leisure_sports_centre'],
       [feature = 'leisure_stadium'] {
-        text-fill: darken(@stadium, 70%);
+        text-fill: #A9A9A9;
       }
       [feature = 'leisure_fitness_centre'],
       [feature = 'leisure_fitness_station'] {
-        text-fill: @leisure-green;
+        text-fill: #A9A9A9;
         [access != ''][access != 'permissive'][access != 'yes'] {
           text-opacity: 0.33;
           text-halo-radius: 0;
@@ -2710,7 +2710,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: black;
+    text-fill: #A9A9A9;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
@@ -2909,7 +2909,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: green;
+    text-fill: #A9A9A9;
     text-dy: 7;
     [zoom >= 18] { text-dy: 8; }
     [zoom >= 19] { text-dy: 11; }
@@ -2936,7 +2936,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: @tourism;
+    text-fill: #A9A9A9;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
     text-face-name: @standard-font;
@@ -3017,7 +3017,7 @@
   [feature = 'attraction_water_slide'] {
     [zoom >= 16] {
       [zoom >= 17] {
-        bridgecasing/line-color: black;
+        bridgecasing/line-color: #A9A9A9;
         bridgecasing/line-join: round;
         bridgecasing/line-width: 1.25;
         [zoom >= 18] { bridgecasing/line-width: 2.5; }
@@ -3055,7 +3055,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: @transportation-text;
+    text-fill: #A9A9A9;
     text-dy: 13;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
@@ -3104,7 +3104,7 @@
   }
   [natural = 'tree']::trunk {
     [zoom >= 18] {
-      trunk/marker-fill: #b27f36;
+      trunk/marker-fill: #A9A9A9;
       trunk/marker-allow-overlap: true;
       trunk/marker-line-width: 0;
       trunk/marker-width: 2;
